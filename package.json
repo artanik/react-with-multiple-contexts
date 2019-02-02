@@ -28,22 +28,15 @@
   },
   "keywords": [
     "react",
-    "extras",
+    "context",
+    "contexts",
     "component",
     "components",
     "util",
     "utils",
     "utilities",
     "helper",
-    "helpers",
-    "auto-bind",
-    "autobind",
-    "bind",
-    "class",
-    "css",
-    "classname",
-    "classnames",
-    "classes"
+    "helpers"
   ],
   "homepage": "https://github.com/artanik/react-with-multiple-contexts#readme",
   "devDependencies": {
