@@ -33,10 +33,8 @@ export function withContextConsumer (Component, contexts) {
           </ContextComponent.Consumer>
         );
       }
-  
       return withName(Component, {...props, ...contextProps, ref})
     };
-  
     return applyConsumer(Object.entries(contexts));
   });
 }
@@ -53,10 +51,8 @@ export function withContextProvider (Component, getContexts) {
           </ContextComponent.Provider>
         );
       }
-  
       return withName(Component, {...props, ref});
     };
-
     return applyProvider(contexts);
   });
 }
