@@ -16,7 +16,6 @@
 ```jsx
 
 import React from 'react';
-import { withContextConsumer } from 'react-with-multiple-contexts';
 import { ContextA, ContextB, ContextC } from './contexts';
 
 export class ComponentProvider extends React.Class {
@@ -40,7 +39,6 @@ export class ComponentProvider extends React.Class {
 ```jsx
 
 import React from 'react';
-import { withContextConsumer } from 'react-with-multiple-contexts';
 import { ContextA, ContextB, ContextC } from './contexts';
 
 export class ComponentConsumer extends React.Class {
