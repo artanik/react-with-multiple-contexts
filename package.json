@@ -1,0 +1,69 @@
+{
+  "name": "react-with-multiple-contexts",
+  "version": "1.0.0",
+  "description": "Use withContextConsumer to easily pass multiple contexts to component's props",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsd-check",
+    "build": "mkdir -p dist && ./node_modules/.bin/babel src --out-file dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "typings": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artanik/react-with-multiple-contexts.git"
+  },
+  "author": {
+    "name": "Artem Anikeev",
+    "email": "artanik94@gmail.com",
+    "url": "https://artanik.github.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artanik/react-with-context-in-props/issues"
+  },
+  "keywords": [
+    "react",
+    "extras",
+    "component",
+    "components",
+    "util",
+    "utils",
+    "utilities",
+    "helper",
+    "helpers",
+    "auto-bind",
+    "autobind",
+    "bind",
+    "class",
+    "css",
+    "classname",
+    "classnames",
+    "classes"
+  ],
+  "homepage": "https://github.com/artanik/react-with-context-in-props#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "tsd-check": "^0.3.0",
+    "@types/react": "^16.8.1"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}
