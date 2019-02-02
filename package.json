@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/artanik/react-with-context-in-props/issues"
+    "url": "https://github.com/artanik/react-with-multiple-contexts/issues"
   },
   "keywords": [
     "react",
@@ -45,7 +45,7 @@
     "classnames",
     "classes"
   ],
-  "homepage": "https://github.com/artanik/react-with-context-in-props#readme",
+  "homepage": "https://github.com/artanik/react-with-multiple-contexts#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
