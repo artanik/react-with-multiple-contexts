@@ -173,31 +173,29 @@ import React from 'react';
 import { ComponentProvider } from './componentProvider';
 import { ComponentConsumer } from './componentConsumer';
 
-class App extends Component {
-  render() {
-    const justProps = {
-      list: [1,2,3],
-      config: {
-        cool: true,
-        boring: false
-      },
-      theme: 'dark',
-    };
+const App = () => {
+  const justProps = {
+    list: [1,2,3],
+    config: {
+      cool: true,
+      boring: false
+    },
+    theme: 'dark',
+  };
 
-    return (
-      <ComponentProvider {...justProps}>
-        <div className="app">
-            <div className="child">
-              {/* 
-                Consumer below receives everything
-                from Provider's props via React.Context API
-              */}
-              <ComponentConsumer />
-            </div>
+  return (
+    <ComponentProvider {...justProps}>
+      <div className="app">
+          <div className="child">
+            {/* 
+              Consumer below receives everything
+              from Provider's props via React.Context API
+            */}
+            <ComponentConsumer />
           </div>
-      </ComponentProvider>
-    );
-  }
+        </div>
+    </ComponentProvider>
+  );
 }
 ```
 
