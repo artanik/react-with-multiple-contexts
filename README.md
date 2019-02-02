@@ -81,7 +81,7 @@ export class ComponentConsumer extends React.Component {
 ## Well, what the `react-with-multiple-contexts` actually do?
 
 > The package provides you a couple of simple [HOCs](https://reactjs.org/docs/higher-order-components.html): `withContextProvider` and `withContextConsumer`.
-> Each HOC returns you a call tree of *React.Provider* or *React.Consumer*, depending on what you want to receive.
+> Each HOC return a call tree of *React.Provider* or *React.Consumer*, depending on what you want to receive.
 > That *call tree* wrapped around **your component**.
 > And finally, your component can now use the *React Context API* via props.
 
@@ -189,7 +189,7 @@ class App extends Component {
         <div className="app">
             <div className="child">
               {/* 
-                Consumer below receive everything
+                Consumer below receives everything
                 from Provider's props via React.Context API
               */}
               <ComponentConsumer />
