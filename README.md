@@ -1,4 +1,4 @@
-# react-with-multiple-contexts
+# react-with-multiple-contexts [![npm version](https://badge.fury.io/js/react-with-multiple-contexts.svg)](https://badge.fury.io/js/react-with-multiple-contexts)
 
 ## Why should I use it?
 
