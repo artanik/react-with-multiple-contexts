@@ -6,7 +6,7 @@ type Component = React.Component | React.ComponentClass | React.PureComponent | 
 export function withContextConsumer(Component: Component, contexts: {[key: string]: any}): React.ReactNode;
 
 export function withContextProvider(Component: Component,
-	 getContexts: (props: {[key: string]: any}) => Array<{
-		context: React.Context<any>,
-		value: any
-	}>):React.ReactNode;
+  getContexts: (props: {[key: string]: any}) => Array<{
+    context: React.Context<any>,
+    value: any
+  }>):React.ReactNode;
