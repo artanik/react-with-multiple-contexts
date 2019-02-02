@@ -99,11 +99,11 @@ $ yarn add react-with-multiple-contexts --dev
 
 ## API
 
-### withContextProvider(ReactComponent, callback)
+### `withContextProvider(ReactComponent, callback)`
 
 `callback` is a function that has the **props** from the Component as an argument and returns a new object that must contain the **context** and the **value** that goes into the context.
 
-### withContextConsumer(ReactComponent, contexts)
+### `withContextConsumer(ReactComponent, contexts)`
 
 `contexts` is an object where each *property name* is the name that you can use in your component through the props and get *property value*, which is a context value in your component.
 
