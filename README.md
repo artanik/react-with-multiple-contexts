@@ -5,7 +5,7 @@
 > **tl;dr** to fix "wrapper hell" while using multiple instance of [React Context API](https://reactjs.org/docs/context.html#api)
 
 > You have to admit that the *React Context API* is a extremely useful, if you need to get props from parent component to child component, and between them is a whole universe of nested things.
-> But this advantage is disappears quickly when you need to use more than one context at the same component level.
+> But this advantage disappears quickly when you need to use more than one context at the same component level.
 
 <details>
   <summary>Click here and you will see the problem I'm talking about</summary>
