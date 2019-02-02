@@ -18,7 +18,7 @@
 import React from 'react';
 import { ContextA, ContextB, ContextC } from './contexts';
 
-export class ComponentProvider extends React.Class {
+export class ComponentProvider extends React.Component {
   render() {
     return (
       <ContextA.Provider value={this.props.list}>
@@ -41,7 +41,7 @@ export class ComponentProvider extends React.Class {
 import React from 'react';
 import { ContextA, ContextB, ContextC } from './contexts';
 
-export class ComponentConsumer extends React.Class {
+export class ComponentConsumer extends React.Component {
   render() {
     return (
       <ContextA.Consumer>
