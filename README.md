@@ -145,12 +145,12 @@ import { contextA, contextB, contextC } from './contexts';
 const DummyComponent = (props) => (
   <div className={props.themeClass}>
     <ol>
-      {this.props.list.map(i => (
+      {props.list.map(i => (
         <li key={i}>{i}</li>
       ))}
     </ol>
     <ul>
-      {Object.entries(this.props.config).map(([k, v]) => (
+      {Object.entries(props.config).map(([k, v]) => (
         <li key={k}>{`${k}: ${v}`}</li>
       ))}
     </ul>
