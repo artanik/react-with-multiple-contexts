@@ -199,6 +199,10 @@ const App = () => {
 }
 ```
 
+### Future with Hooks
+
+As you know, hooks are an upcoming feature that lets you use state and other React features without writing a class. `useContext` is one of the hooks, and that hook can simplify consuming value from Context.Consumer with just `const context = useContext(Context);`, even easier, than API from this package. But since it is a hook, you can use `useContext` only in functional components, and still you need to write nested providers. Although of course you can easily write something like `useProvider(Component, value)`, but I'm not sure about this yet.
+
 > P.S. those HOCs also support [Forwarding Refs (16.3+)](https://reactjs.org/docs/forwarding-refs.html)
 
 ## License
