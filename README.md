@@ -2,7 +2,7 @@
 
 ## Why should I use it?
 
-> **tl;dr** to fix "wrapper hell" while using multiple instance of [React Context API](https://reactjs.org/docs/context.html#api)
+> **tl;dr** to fix "wrapper hell" while using multiple instance of [React Context API (16.3+)](https://reactjs.org/docs/context.html#api)
 
 > You have to admit that the *React Context API* is a extremely useful, if you need to get props from parent component to child component, and between them is a whole universe of nested things.
 > But this advantage quickly disappears when you need to use more than one context at the same component level.
@@ -174,6 +174,8 @@ import { ComponentProvider } from './componentProvider';
 import { ComponentConsumer } from './componentConsumer';
 
 const App = () => {
+  // Technically you can use state here
+  // Just pass it to Provider like props
   const justProps = {
     list: [1,2,3],
     config: {

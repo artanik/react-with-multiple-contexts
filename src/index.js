@@ -1,6 +1,6 @@
 import React from 'react';
 
-function getDisplayName(WrappedComponent) {
+function getDisplayName (WrappedComponent) {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 
@@ -33,7 +33,7 @@ export function withContextConsumer (Component, contexts) {
           </ContextComponent.Consumer>
         );
       }
-      return withName(Component, {...props, ...contextProps, ref})
+      return withName(Component, { ...props, ...contextProps, ref });
     };
     return applyConsumer(Object.entries(contexts));
   });
@@ -42,16 +42,16 @@ export function withContextConsumer (Component, contexts) {
 export function withContextProvider (Component, getContexts) {
   return enhance(`WithContextProvider(${getDisplayName(Component)})`, (props, ref) => {
     const contexts = getContexts(props);
-    const applyProvider = (contexts) => {
-      if (contexts.length !== 0) {
-        const { context: ContextComponent, value } = head(contexts);
+    const applyProvider = (restContexts) => {
+      if (restContexts.length !== 0) {
+        const { context: ContextComponent, value } = head(restContexts);
         return (
           <ContextComponent.Provider value={value}>
-            {applyProvider(drop(contexts))}
+            {applyProvider(drop(restContexts))}
           </ContextComponent.Provider>
         );
       }
-      return withName(Component, {...props, ref});
+      return withName(Component, { ...props, ref });
     };
     return applyProvider(contexts);
   });

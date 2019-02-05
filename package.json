@@ -1,6 +1,6 @@
 {
   "name": "react-with-multiple-contexts",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Use withContextConsumer to easily pass multiple contexts to component's props",
   "main": "dist/index.js",
   "scripts": {
