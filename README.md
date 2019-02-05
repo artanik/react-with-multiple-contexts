@@ -136,7 +136,7 @@ export const ComponentProvider = withContextProvider(DummyComponent, (props) => 
 ### Consumer Declaration
 
 ```jsx
-// componentProvider.jsx
+// componentConsumer.jsx
 
 import React from 'react';
 import { withContextConsumer } from 'react-with-multiple-contexts';
