@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function getDisplayName (WrappedComponent) {
-  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
+  return WrappedComponent.displayName || WrappedComponent.name || "Component";
 }
 
 function enhance (name, fn) {
@@ -15,7 +15,7 @@ function withName (Component, props) {
 }
 
 const drop = (a, i = 1) => (a && a.length) ? a.slice(i, a.length) : [];
-const head = a => (a && a.length) ? a[0] : undefined;
+const head = (a) => (a && a.length) ? a[0] : void 0;
 
 export function withContextConsumer (Component, contexts) {
   return enhance(`WithContextConsumer(${getDisplayName(Component)})`, (props, ref) => {
@@ -24,7 +24,7 @@ export function withContextConsumer (Component, contexts) {
         const [contextName, ContextComponent] = head(contextEntries);
         return (
           <ContextComponent.Consumer>
-            {context => (
+            {(context) => (
               applyConsumer(
                 drop(contextEntries),
                 { [contextName]: context, ...contextProps },
