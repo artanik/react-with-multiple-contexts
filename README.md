@@ -1,4 +1,4 @@
-# react-with-multiple-contexts [![npm version](https://badge.fury.io/js/react-with-multiple-contexts.svg)](https://badge.fury.io/js/react-with-multiple-contexts)
+# react-with-multiple-contexts [![npm version](https://badge.fury.io/js/react-with-multiple-contexts.svg)](https://badge.fury.io/js/react-with-multiple-contexts) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a48cf25af69044bbb544275b64451d08)](https://www.codacy.com/app/artanik/react-with-multiple-contexts?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=artanik/react-with-multiple-contexts&amp;utm_campaign=Badge_Grade)
 
 ## Why should I use it?
 
