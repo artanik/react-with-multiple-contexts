@@ -88,13 +88,13 @@ export class ComponentConsumer extends React.Component {
 ## Install
 
 ```console
-$ npm install --save-dev react-with-multiple-contexts
+$ npm install react-with-multiple-contexts
 ```
 
 Or if you prefer using Yarn:
 
 ```console
-$ yarn add react-with-multiple-contexts --dev
+$ yarn add react-with-multiple-contexts
 ```
 
 ## API
@@ -122,14 +122,14 @@ const DummyComponent = (props) => (
   // props also has everything that pass through the context
   // such as props.list, props.config and props.theme
   <React.Fragment>{props.children}</React.Fragment>
-)
+);
 
 export const ComponentProvider = withContextProvider(DummyComponent, (props) => ([
   // where each context(A|B|C) it's just an empty React.createContext(null)
   { context: contextA, value: props.list },
   { context: contextB, value: props.config },
   { context: contextC, value: props.theme }
-]))
+]));
 
 ```
 
