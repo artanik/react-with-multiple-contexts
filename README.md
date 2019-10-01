@@ -142,15 +142,15 @@ import React from 'react';
 import { withContextConsumer } from 'react-with-multiple-contexts';
 import { contextA, contextB, contextC } from './contexts';
 
-const DummyComponent = (props) => (
-  <div className={props.themeClass}>
+const DummyComponent = ({ themeClass, list, config }) => (
+  <div className={themeClass}>
     <ol>
-      {props.list.map(i => (
+      {list.map(i => (
         <li key={i}>{i}</li>
       ))}
     </ol>
     <ul>
-      {Object.entries(props.config).map(([k, v]) => (
+      {Object.entries(config).map(([k, v]) => (
         <li key={k}>{`${k}: ${v}`}</li>
       ))}
     </ul>
