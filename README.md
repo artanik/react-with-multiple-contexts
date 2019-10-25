@@ -1,10 +1,10 @@
-# react-with-multiple-contexts [![npm version](https://badge.fury.io/js/react-with-multiple-contexts.svg)](https://badge.fury.io/js/react-with-multiple-contexts) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a48cf25af69044bbb544275b64451d08)](https://www.codacy.com/app/artanik/react-with-multiple-contexts?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=artanik/react-with-multiple-contexts&amp;utm_campaign=Badge_Grade)
+# react-with-multiple-contexts [![npm version](https://badge.fury.io/js/react-with-multiple-contexts.svg)](https://badge.fury.io/js/react-with-multiple-contexts)
 
 ## Why should I use it?
 
 > **tl;dr** to fix "wrapper hell" while using multiple instance of [React Context API (16.3+)](https://reactjs.org/docs/context.html#api)
 
-> You have to admit that the *React Context API* is a extremely useful, if you need to get props from parent component to child component, and between them is a whole universe of nested things.
+> You have to admit that the *React Context API* is an extremely useful, if you need to get props from parent component to child component, and between them is a whole universe of nested things.
 > But this advantage quickly disappears when you need to use more than one context at the same component level.
 
 <details>
@@ -81,7 +81,7 @@ export class ComponentConsumer extends React.Component {
 ## Well, what the `react-with-multiple-contexts` actually do?
 
 > The package provides you a couple of simple [HOCs](https://reactjs.org/docs/higher-order-components.html): `withContextProvider` and `withContextConsumer`.
-> Each HOC return a call tree of *React.Provider* or *React.Consumer*, depending on what you want to receive.
+> Each HOC returns a call tree of *React.Provider* or *React.Consumer*, depending on what you want to receive.
 > That *call tree* wrapped around **your component**.
 > And finally, your component can now use the *React Context API* via props.
 
@@ -203,7 +203,7 @@ const App = () => {
 
 ## Future with Hooks
 
-As you know, hooks are an upcoming feature that lets you use state and other React features without writing a class. `useContext` is one of the hooks, and that hook can simplify consuming value from Context.Consumer with just `const context = useContext(Context);`. This is even easier than API from this package. But since it is a hook, you can use `useContext` only in functional components, and still you need to write nested providers. Although of course you can easily write something like `useProvider(Component, value)`, but I'm not sure about that yet.
+As you know, hooks are an upcoming feature that lets you use state and other React features without writing a class. `useContext` is one of the hooks, and that hook can simplify consuming value from Context.Consumer with just `const context = useContext(Context);`. This is even easier than API from this package. But since it is a hook, you can use `useContext` only in functional components, and still, you need to write nested providers. Although you can easily write something like `useProvider(Component, value)`, but I'm not sure about that yet.
 
 > P.S. those HOCs also support [Forwarding Refs (16.3+)](https://reactjs.org/docs/forwarding-refs.html)
 
