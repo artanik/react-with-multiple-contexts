@@ -1,10 +1,9 @@
 {
   "name": "react-with-multiple-contexts",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Use withContextConsumer to easily pass multiple contexts to component's props",
   "main": "dist/index.js",
   "scripts": {
-    "test": "tsd-check",
     "build": "mkdir -p dist && ./node_modules/.bin/babel src --out-file dist/index.js",
     "prepublishOnly": "npm run build"
   },
@@ -40,18 +39,17 @@
   ],
   "homepage": "https://github.com/artanik/react-with-multiple-contexts#readme",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "tsd-check": "^0.3.0",
-    "@types/react": "^16.8.1"
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@types/react": "^19.0.0"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "babel": {
     "presets": [
